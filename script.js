@@ -12,41 +12,49 @@ function writePassword() {
 }
 
 function generatePassword(){
-  return "temporary password";
+  var generatePassword = ""; 
 
-  var upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  var lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz"
-  var numericCharacters = "1234567890"
-  var specialCharacters = "!@#$%^&*()"
+  var upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
+  var numericCharacters = "1234567890";
+  var specialCharacters = "!@#$%^&*()";
+  var requiredCharacterString = "";
+  var passwordLength = prompt("How many characters would you like in your Password? \nPlease select a number between 8-128.")
 
-  var requiredCharacterString = ""
-
-  var passwordLength = prompt("How many characters would you like in your Password?" \n(Please enter a number between 8-128.")
-
+  
+  
   while(passwordLength < 8 || passwordLength > 128 {
     passwordLength = prompt("The password must be between8 and 128 characters. \nPlease select a number between 8-128.")
   }
 
   var includeLowerCase = confirm("Do you want to include lowercase characters?"); 
-if(includeLowerCase) { 
-  requiredStrongCharacterString = requiredStrongCharacterString.concat(lowerCaseLetters);
+    if(includeLowerCase) { 
+    requiredStrongCharacterString = requiredStrongCharacterString.concat(lowerCaseLetters);
 }
-  var includeUpperCase = confirm("Do you want to include uppercase characters?");
-  console.log("Include uppercase characters: "+includeUpperCase); 
-
+  
+var includeUpperCase = confirm("Do you want to include uppercase characters?");
   if(includeUpperCase) {
     requiredStrongCharacterString = requiredStrongCharacterString.concat(upperCaseLetters);
   }
-var includeNumeric = confirm("Do you want to include numeric characters?");
-console.log("Include numeric characters: "+includeNumeric); 
-if(includeNumeric) {
+
+  var includeNumeric = confirm("Do you want to include numeric characters?");
+  if(includeNumeric) {
   requiredCharacterString = requiredCharacterString.concat(numericCharacters);
 
-  var includeSpecial = confirm("Do you want to include special characters?"); 
-  console.log("Include special characters: "+includeSpecial); 
+  var special = confirm("Do you want to include special characters?"); 
+  if(special) {
+    requiredCharacterString = requiredCharacterString.concat(specialCharacters); 
+  }
 
-  
-}
+for (i =0; i < passwordLength; i++){
+  var random = Math.floor(Math.random())* requiredCharacterString.length); 
+
+  generatePassword = generatePassword.concat(requiredCharacterString.characterAt(random));
+
+  console.log("Generate password is:" +generatePassword);
+} 
+
+return generatePassword; 
 
 }
 
