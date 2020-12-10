@@ -21,9 +21,15 @@ function generatePassword(){
 
   var requiredCharatcerString = ""
 
+  var passwordLength = prompt("How many characters would you like in your Password?" \n(Please enter a number between 8-128)");
+
+  while(passwordLength < 8 || passwordLength > 128 {
+    passwordLength = prompt("The password must be between8 and 128 characters. \nPlease select a number between 8-128.")
+  }
+
   var includeUpperCase = confirm("Do you want to include uppercase character?");
   console.log("Include uppercase characters: "=includeUpperCase); 
-  
+
 
 }
 
