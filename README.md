@@ -32,7 +32,7 @@ This application should be deployed within a browser and when the generate passw
 
 * Study Groups 
 
-*03-resources 
+* 03-resources  
 
 ### Moc-Up
 
