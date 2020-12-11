@@ -1,16 +1,9 @@
 # password-generator
 
-The Password generator project's objective was to create an application  
+The project password generator was designed to create an application that an employee could use to generate their own personal password. The objective was for this design to produce a random password based on criteria selected for the user to choose from. By applying different Javascript principles, the user will be able to establish a password based on their input to the selected prompts. 
 
--Applied the Bootstrap navbar and jumbotron framework ensure the navbar was consistent across all files and framework for the
+-
 
--Duplicated the navbar once ensuring that it functioned properly on the initial index.html file 
-
--Added the correct style to each of the files and added the supporting images required 
-
--Ensured all pages were responsive at respective break points 
-
--Added bio information and supporting link for access to professional social media site.
 
 # Installation
 
