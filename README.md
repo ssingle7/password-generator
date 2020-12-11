@@ -1,6 +1,6 @@
 # password-generator
 
-The My portfolio project was an opportunity to demonstrate the tools that were learned via Bootstrap and CSS to create a mobile responsive portfolio. The objective was to create a responsive design and to ensure that the web applications render well on all devices in the window and screen sizes. Bootstrap CSS was the primary framework used to achieve this responsive layout. 
+The Password generator project's objective was to create an application  
 
 -Applied the Bootstrap navbar and jumbotron framework ensure the navbar was consistent across all files and framework for the
 
@@ -30,8 +30,6 @@ This application contains several nav links, a container, and a jumbotron. When 
 * 02-ask-the-class
 
 * Study Groups 
-
-Mock-Up
 
 ### Moc-Up
 
