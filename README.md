@@ -1,4 +1,4 @@
-# password-generator
+# Password Generator 
 
 The project password generator was designed to create an application that an employee could use to generate their own personal password. The objective was for this design to produce a random password based on criteria selected for the user to choose from. By applying different Javascript principles, the user will be able to establish a password based on their input to the selected prompts. 
 
