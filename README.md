@@ -33,9 +33,9 @@ This application contains several nav links, a container, and a jumbotron. When 
 
 ### Moc-Up
 
-The following image shows the web application's appearance and functionality:
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+
+![Password Generator](../homework/password-generator/password.PNG)
 
 ### License 
 
